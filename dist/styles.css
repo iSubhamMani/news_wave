@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-1: #F9F4EC;
+    --clr-2: #292322;
+    --content-size-1: 1.8rem;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--clr-1);
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+}
+
+header > .hc-1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem 2rem;
+    justify-content: space-between;
+}
+
+header > .hc-1 > #banner {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+header > .hc-1 > #banner > #banner-icon{
+    width: var(--content-size-1);
+    height: var(--content-size-1);
+    pointer-events: none;
+}
+
+header > .hc-1 > #banner > #banner-txt{
+    font-size: var(--content-size-1);
+    font-weight: 700;
+    color: var(--clr-2);
+}
+
+header > .hc-1 > #search-box {
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+header > .hc-1 > #search-box > #search-field {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--clr-2);
+    color: var(--clr-2);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    flex: 1;
+}
+
+header > .hc-1 > #search-box > #search-icon::before {
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--clr-2);
+    font-size: 1rem;
+}
+
+header > .hc-1 > #search-box > #search-icon:hover {
+    cursor: pointer;
+}
+
+header > .hc-1 > #location-box {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+header > .hc-1 > #location-box > #location-icon::before {
+    content: '\f3c5';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--clr-2);
+}
+
+header > .hc-1 > #location-box > #country {
+    background-color: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: var(--clr-2);
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    font-weight: 600;
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+header > .hc-1 > #location-box > #country:hover {
+    cursor: pointer;
+}
+
+header > .hc-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > .hc-2 > #latest-upd {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--clr-2);
+    padding-bottom: 0.1rem;
+    margin-top: 2rem;
+}
